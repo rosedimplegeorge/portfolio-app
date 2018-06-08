@@ -17,7 +17,7 @@ class Footer extends Component {
             <div id="contact">
                 <FooterStyle >
                     <div>
-                    <p>Copyright 2018, Rose Dimple George, WDI 15, General Assembly, Atlanta, GA</p>
+                    <p>Copyright 2018: Rose Dimple George, WDI 15, General Assembly, Atlanta, GA</p>
                     </div>
                 </FooterStyle>
             </div>
