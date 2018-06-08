@@ -33,10 +33,10 @@ class NavBar extends Component {
                         </NavDropdown>
                         </Nav>
                         <Nav pullRight>
-                        <NavItem eventKey={1} href="#">
+                        <NavItem eventKey={1} href="/Contacts">
                             Contact
                         </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        <NavItem eventKey={2} href="/Hobbies">
                             Hobbies
                         </NavItem>
                         </Nav>
