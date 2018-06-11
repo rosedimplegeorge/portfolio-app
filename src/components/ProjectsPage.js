@@ -1,8 +1,32 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar'
-import { Modal } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import Footer from './Footer'
+import { Image } from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import styled from 'styled-components'
+
+const ProjectsStyle = styled.div`
+width: 100vw;
+height: 60vh;
+border: solid black 1px;
+text-align: justify;
+display: flex;
+align-items: center;
+p, h5{
+    width: 55vw;
+    display: flex;
+    align-content: left;
+    margin-left: 60px;
+    @media (max-width: 600px){
+        font-size: 12px;
+        width: 90vw;
+        margin-left: 10px;
+    }
+    }
+`
 
 class ProjectsPage extends Component {
     constructor(props, context) {
@@ -28,89 +52,41 @@ class ProjectsPage extends Component {
         return (
             <div>
                 <NavBar />
-                <h1>Projects</h1>
-                <div>
-                    <p>Project 1 </p>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Jeopardy</Button>
-                    <Modal show={this.state.show} onHide={this.handleClose}>
-                        <Modal.Header closeButton>
-                        <Modal.Title>Jeopardy Game</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h6>Jeopardy game built with JavaScript, jQuery, CSS, Bootstrap, and HTML</h6>
-                            <hr />
-                            <p>Click below to see my application deployed on Bitballoon</p>
-                           <a href="http://clever-swartz-16d5a5.bitballoon.com/"><Button bsStyle="info">Play Jeopardy</Button></a>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button onClick={this.handleClose}>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                    <p>Project 2</p>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Jeopardy</Button>
-                    <Modal show={this.state.show} onHide={this.handleClose}>
-                        <Modal.Header closeButton>
-                        <Modal.Title>Technical Skills Tracker</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h6>Full Stack Application Built with Express, MongoDB and Handlebars</h6>
-                            <hr />
-                            <p>Click below to see my application deployed on Heroku</p>
-                            <Button bsStyle="info">First Full Stack Application</Button>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button onClick={this.handleClose}>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                    <p>Project 3 </p>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Jeopardy</Button>
-                    <Modal show={this.state.show} onHide={this.handleClose}>
-                        <Modal.Header closeButton>
-                        <Modal.Title>Cook Book</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h6>MERN Stack Application</h6>
-                            <hr />
-                            <p>Click below to see my application deployed on Heroku</p>
-                            <Button bsStyle="info">See my CookBook</Button>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button onClick={this.handleClose}>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                    <p>Project 4 </p>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Jeopardy</Button>
-                    <Modal show={this.state.show} onHide={this.handleClose}>
-                        <Modal.Header closeButton>
-                        <Modal.Title>Vegabond</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h6>Group Project- Full Stack Application using Ruby on Rails, PostgreSQL,and React</h6>
-                            <hr />
-                            <p>Click below to see my application deployed on Heroku</p>
-                            <Button bsStyle="info">Vegabond</Button>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button onClick={this.handleClose}>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                    <p>Project 5 - Capstone Project</p>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>Jeopardy</Button>
-                    <Modal show={this.state.show} onHide={this.handleClose}>
-                        <Modal.Header closeButton>
-                        <Modal.Title>My Diary</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <h6>Jeopardy game built with JavaScript, jQuery, CSS, Bootstrap, and HTML</h6>
-                            <hr />
-                            <p>Click below to see my application deployed on Heroku</p>
-                            <Button bsStyle="info">Play Jeopardy</Button>
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button onClick={this.handleClose}>Close</Button>
-                        </Modal.Footer>
-                    </Modal>
-                </div>
+                <ProjectsStyle >
+                <Grid>
+                    <Row>
+                        <Col xs={2} md={2}>
+                            <Image src="https://i.imgur.com/MB2g8XN.png" alt="RDG" thumbnail />
+                            <Button bsStyle="primary" bsSize="large" href="http://clever-swartz-16d5a5.bitballoon.com/">Jeopardy</Button>
+                        </Col>
+                    </Row>
+                </Grid>
+                <Grid>
+                    <Row>
+                        <Col xs={2} md={2}>
+                            <Image src="https://i.imgur.com/zTDma7h.png" alt="TechnicalSkiilsTracker" thumbnail />
+                            <Button bsStyle="primary" bsSize="large" href="https://nameless-plateau-27580.herokuapp.com/users">Tech Tracker</Button>
+                        </Col>
+                    </Row>
+                </Grid>
+                <Grid>
+                    <Row>
+                        <Col xs={2} md={2}>
+                            <Image src="https://i.imgur.com/KX1HPWd.png" alt="CookBook" thumbnail />
+                            <Button bsStyle="primary" bsSize="large" href="https://cook-book-app.herokuapp.com/">Cook Book</Button>
+                        </Col>
+                    </Row>
+                </Grid>
+                <Grid>
+                    <Row>
+                        <Col xs={2} md={2}>
+                            <Image src="https://i.imgur.com/xo1P2k0.jpg" alt="MyDiary" thumbnail />
+                            <Button bsStyle="primary" bsSize="large" href="https://my-diary-wdi15.herokuapp.com/">My Diary</Button> 
+                        </Col>
+                    </Row>
+                </Grid>
+                </ProjectsStyle>
+                <Footer />
             </div>
         )
     }

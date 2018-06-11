@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar'
 import styled from 'styled-components'
-import Footer from './Footer'
+import { Image } from 'react-bootstrap';
+import { Grid } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 const AboutStyle = styled.div`
 width: 100vw;
@@ -30,6 +34,13 @@ class AboutPage extends Component {
                 <NavBar />
                 <AboutStyle >
                 <p>Hi ! I am Rose Dimple George.I am a full stack developer with a passion for development. I have an entry level of knowledge in front end development using my preferred front end framework, React, in addition to a proficiency using Express, MongoDB, Ruby on Rails, and PostgreSQL as my Controllers and Models. My code is consistent, clean, easy to read. I work well with others, learn fast, and have exceptional communication skills when helping a teammate through a difficult problem.Check out my  GitHub and give me your feedback.</p>
+                <Grid>
+                    <Row>
+                        <Col xs={6} md={4}>
+                            <Image src="https://i.imgur.com/9p94NZZ.jpg" alt="RDG" thumbnail />
+                        </Col>
+                    </Row>
+                </Grid>
                 </AboutStyle>
                 <Footer />
             </div>

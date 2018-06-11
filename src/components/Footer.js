@@ -8,8 +8,8 @@ background-color: black;
 padding: 100px;
 color:grey;
 border: solid black 1px;
-width: 100vw;
-height: 45vh;`
+width: 100%;
+height: 10vh;`
 
 class Footer extends Component {
     render() {
