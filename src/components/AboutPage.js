@@ -14,7 +14,7 @@ border: solid black 1px;
 text-align: justify;
 display: flex;
 align-items: center;
-p, h5{
+/* p, h5{
     width: 55vw;
     display: flex;
     align-content: left;
@@ -24,7 +24,7 @@ p, h5{
         width: 90vw;
         margin-left: 10px;
     }
-    }
+    } */
 }`
 
 class AboutPage extends Component {
@@ -36,7 +36,7 @@ class AboutPage extends Component {
                 <p>Hi ! I am Rose Dimple George.I am a full stack developer with a passion for development. I have an entry level of knowledge in front end development using my preferred front end framework, React, in addition to a proficiency using Express, MongoDB, Ruby on Rails, and PostgreSQL as my Controllers and Models. My code is consistent, clean, easy to read. I work well with others, learn fast, and have exceptional communication skills when helping a teammate through a difficult problem.Check out my  GitHub and give me your feedback.</p>
                 <Grid>
                     <Row>
-                        <Col xs={6} md={4}>
+                        <Col xs={10} md={10}>
                             <Image src="https://i.imgur.com/9p94NZZ.jpg" alt="RDG" thumbnail />
                         </Col>
                     </Row>

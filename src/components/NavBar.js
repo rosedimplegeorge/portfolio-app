@@ -19,13 +19,19 @@ class NavBar extends Component {
                         <NavItem eventKey={1} href="/About">
                             About Me
                         </NavItem>
+                        <NavItem eventKey={2} href="https://github.com/rosedimplegeorge">
+                            GitHub
+                        </NavItem>
+                        <NavItem eventKey={2} href="https://www.linkedin.com/in/rosedimplegeorge/">
+                            LinkedIn
+                        </NavItem>
                         </Nav>
                         <Nav pullRight>
-                        <NavItem eventKey={1} href="/Contacts">
-                            Contact
-                        </NavItem>
                         <NavItem eventKey={2} href="/Projects">
                             Projects
+                        </NavItem>
+                        <NavItem eventKey={1} href="/Contacts">
+                            Contact
                         </NavItem>
                         </Nav>
                     </Navbar.Collapse>
