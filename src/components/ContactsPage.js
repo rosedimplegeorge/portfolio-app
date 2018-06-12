@@ -6,6 +6,7 @@ import { Grid } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import styled from 'styled-components'
+//import { Link } from 'react-router-dom';
 
 const ContactsStyle = styled.div`
 width: 100vw;
@@ -14,7 +15,7 @@ border: solid black 1px;
 text-align: justify;
 display: flex;
 align-items: center;
-p, h5{
+/* p, h5{
     width: 55vw;
     display: flex;
     align-content: left;
@@ -24,7 +25,7 @@ p, h5{
         width: 90vw;
         margin-left: 10px;
     }
-    }
+    } */
 }`
 
 class ContactsPage extends Component {
@@ -33,7 +34,11 @@ class ContactsPage extends Component {
             <div>
                 <NavBar />
                 <ContactsStyle >
-                   <p> Email:rosedimplegeorge@gmail.com, www.rosedimplegeorge.com,Ph:404-936-8587</p>
+                   <ul>
+                       <li>Email:rosedimplegeorge@gmail.com</li>
+                       <li>www.rosedimplegeorge.com</li>
+                       <li>Ph:404-936-8587</li>
+                   </ul>
            <Grid>
                     <Row>
                         <Col xs={6} md={4}>
