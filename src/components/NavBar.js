@@ -30,7 +30,7 @@ class NavBar extends Component {
                         <NavItem eventKey={2} href="/Projects">
                             Projects
                         </NavItem>
-                        <NavItem eventKey={2} href="https://i.imgur.com/MZ4QzDf.png">
+                        <NavItem eventKey={2} href="https://i.imgur.com/Y8qviWE.png">
                             Resume
                         </NavItem>
                         <NavItem eventKey={1} href="/Contacts">
